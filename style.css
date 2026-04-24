@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+/* LOJA */
+
+body:not(.pagina-final) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+#lista-livros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.livros {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#carrinho {
+  background: white;
+  padding: 15px;
+  border: 2px solid #333;
+  min-width: 220px;
+}
+
+#itens-carrinho li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.remover-item {
+  background: #ffc107;
+  color: black;
+  margin-left: 10px;
+}
+
+#btn-limpar {
+  background: #dc3545;
+}
+
+#btn-finalizar {
+  background: #007bff;
+}
+
+/* COMPRA FINALIZADA */
+
+body.pagina-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.final-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.titulo-final {
+  font-size: 48px;
+  margin: 0;
+}
+
+.mensagem-final {
+  font-size: 22px;
+  margin: 0;
+}
+
+.total-final {
+  font-size: 32px;
+  font-weight: bold;
+  color: #28a745;
+  margin: 0;
+}
+
+.botao-voltar {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botao-voltar:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra Finalizada</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-final">
+
+  <main class="final-container">
+
+    <h1 class="titulo-final">Compra Finalizada 🎉</h1>
+
+    <p class="mensagem-final">
+      Sua compra foi concluída com sucesso!
+    </p>
+
+    <p id="total-final" class="total-final"></p>
+
+    <button class="botao-voltar" onclick="voltar()">
+      Voltar para loja
+    </button>
+
+  </main>
+
+  <script>
+    const total = localStorage.getItem("totalCompra");
+
+    document.getElementById("total-final").textContent =
+      `Total: R$ ${total}`;
+
+    function voltar() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
